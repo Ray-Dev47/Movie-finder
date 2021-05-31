@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<!-- footer -->
-		<div class="bg-gray-700 h-50">
+		<div class="bg-gray-700 mt-10 h-50">
 			<div
 				class="flex sm:justify-between items-center flex-col sm:flex-row max-w-full mx-auto p-8 text-white "
 			>
