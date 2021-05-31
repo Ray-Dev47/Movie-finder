@@ -30,8 +30,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">GodZilla Vs KingKong</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">GodZilla Vs KingKong</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -45,8 +45,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2  font-bold text-xl">Zack Synder's Justice League</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2  font-bold text-md sm:text-xl">Zack Synder's Justice League</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -60,8 +60,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2  font-bold text-xl">Chaos Walking</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2  font-bold text-md sm:text-xl">Chaos Walking</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -75,8 +75,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Mortal Kombat</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">Mortal Kombat</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -92,8 +92,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Raya and the Last Dragon</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">Raya and the Last Dragon</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -108,8 +108,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Thunder Force</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">Thunder Force</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -124,11 +124,11 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl"
+					<span class="py-2 font-bold text-md sm:text-xl"
 						>Mortal Kombat Legends: <br />
 						Scorpion's Revenge</span
 					>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -143,8 +143,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Twist</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:pb-14">
+					<span class="py-2 font-bold text-md sm:text-xl">Twist</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:pb-14">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -160,8 +160,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Tom & Jerry</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">Tom & Jerry</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -175,8 +175,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Monster Hunter</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">Monster Hunter</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -191,8 +191,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Cherry</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">Cherry</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -207,8 +207,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Sentinelle</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-14">
+					<span class="py-2 font-bold text-md sm:text-xl">Sentinelle</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-14">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -224,8 +224,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Outside the Wire</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">Outside the Wire</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -240,8 +240,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Bajocero</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">Bajocero</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -256,8 +256,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Wonder Woman 1984</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
+					<span class="py-2 font-bold text-md sm:text-xl">Wonder Woman 1984</span>
+					<div class="flex text-md sm:text-lg text-red-500 mb-10 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -272,8 +272,8 @@
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
-					<span class="py-2 font-bold text-xl">Space Sweepers</span>
-					<div class="flex text-lg text-red-500">
+					<span class="py-2 font-bold text-md sm:text-xl">Space Sweepers</span>
+					<div class="flex text-md sm:text-lg text-red-500">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
