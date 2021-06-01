@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-resource": "^1.5.2",
+    "vue-router": "^4.0.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.2",

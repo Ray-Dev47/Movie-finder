@@ -6,11 +6,13 @@
 				class="flex sm:justify-between items-center flex-col sm:flex-row max-w-full mx-auto p-8 text-white "
 			>
 				<div class="sm:mt-6 mt-3">
+                    <router-link to="/">
 					<img
 						class="sm:h-28 sm:w-28 w-20 h-20"
 						src="@/assets/img/logo-white.png"
 						alt="Workflow logo"
 					/>
+                    </router-link>
 				</div>
 				<div
 					class="font-bold text-lg flex  flex-col cursor-pointer"
@@ -26,7 +28,7 @@
                                 June 2021
                             </div>				
 					</div>
-					<div class="mt-6 text-sm sm:text-lg flex flex-col items-center flex justify-center sm:items-end">
+					<div class="mt-6 text-sm sm:text-lg flex-col items-center flex justify-center sm:items-end">
                         The Movie Database API
                         <div>
 						<img

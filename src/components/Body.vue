@@ -25,11 +25,14 @@
 
 			<div class="flex flex-row flex-wrap p-4 items-center justify-center sm:justify-between">
 				<div class="flex flex-wrap flex-col">
-					<img
+                    <router-link to="info">
+                        <img
 						src="@/assets/img/img-1.jpg"
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
+                    </router-link>
+					
 					<span class="py-2 font-bold text-xl">GodZilla Vs KingKong</span>
 					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
 						<i class="fas fa-star"></i>
