@@ -7,11 +7,13 @@
 			>
 				<div class="sm:mt-6 mt-3">
                     <router-link to="/">
+                    <a>
 					<img
 						class="sm:h-28 sm:w-28 w-20 h-20"
 						src="@/assets/img/logo-white.png"
 						alt="Workflow logo"
 					/>
+                    </a>
                     </router-link>
 				</div>
 				<div
