@@ -24,267 +24,56 @@
 			</div>
 
 			<div class="flex flex-row flex-wrap p-4 items-center justify-center sm:justify-between">
-				<div class="flex flex-wrap flex-col">
+				<div v-if="isLoading">Loading....</div>
+				<div 
+					v-for="movie in movies"
+					:key="movie.id" 
+					class="flex flex-wrap flex-col"
+				>
                     <router-link to="info">
                         <img
-						src="@/assets/img/img-1.jpg"
+						:src="'https://image.tmdb.org/t/p/w500/'+movie.backdrop_path"
 						alt="godzilla"
 						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
 					/>
                     </router-link>
 					
-					<span class="py-2 font-bold text-xl">GodZilla Vs KingKong</span>
+					<span class="py-2 font-bold text-xl">{{ movie.title  }}</span>
 					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star-half-alt"></i>
-					</div>
-				</div>
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-2.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2  font-bold text-xl">Zack Synder's Justice League</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
-					</div>
-				</div>
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-3.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2  font-bold text-xl">Chaos Walking</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
-					</div>
-				</div>
-				<div class="flex flex-col">
-					<img
-						src="@/assets/img/img-4.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Mortal Kombat</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-
-				<!--poster second section  -->
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-5.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Raya and the Last Dragon</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
-					</div>
-				</div>
-
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-6.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Thunder Force</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-7.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl"
-						>Mortal Kombat Legends: <br />
-						Scorpion's Revenge</span
-					>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-8.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Twist</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:pb-14">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
-					</div>
-				</div>
-
-				<!-- poster third section  -->
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-9.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Tom & Jerry</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-10.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Monster Hunter</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
-					</div>
-				</div>
-
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-11.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Cherry</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-12.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Sentinelle</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-14">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-
-				<!-- poster fourth section  -->
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-13.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Outside the Wire</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-14.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Bajocero</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
-				</div>
-
-				<div class="flex flex-wrap flex-col">
-					<img
-						src="@/assets/img/img-15.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Wonder Woman 1984</span>
-					<div class="flex text-lg text-red-500 mb-7 sm:mb-0">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
-					</div>
-				</div>
-
-				<div class="flex flex-wrap flex-col ">
-					<img
-						src="@/assets/img/img-16.jpg"
-						alt="godzilla"
-						class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
-					/>
-					<span class="py-2 font-bold text-xl">Space Sweepers</span>
-					<div class="flex text-lg text-red-500">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </template>
+<script>
+export default {
+	data() {
+		return{
+			movies: [],
+			isLoading: false
+		};
+	},
+	methods:{
+		getMovie(){
+			this.isLoading = true;
+			let url = 'https://api.themoviedb.org/3/movie/popular?api_key=9099d4a456925cc52c8aed25ab61ba4e';
+			fetch(url)
+				.then(response => response.json())
+				.then(response => {
+					this.isLoading = false;
+					this.movies = response.results;
+					console.log(response);
+				});
+		}
+	},
+	mounted(){
+		this.getMovie();
+	}
+}
+</script>
