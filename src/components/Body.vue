@@ -19,30 +19,30 @@
 
         <!-- movie posters -->
         <div class="mt-36">
-          <div class="font-bold text-2xl sm:text-4xl mb-10">New Releases</div>
+          <div class="font-bold dark:text-white text-2xl sm:text-4xl mb-10">New Releases</div>
         </div>
       </div>
 
       <div
-        class="flex flex-row flex-wrap py-4 space-x-2 items-center justify-center sm:justify-between"
+        class="flex flex-row flex-wrap py-4  items-center justify-center sm:justify-between"
       >
         <div v-if="isLoading">Loading....</div>
         <div
           v-for="movie in movies"
           :key="movie.id"
-          class="flex flex-wrap flex-col"
+          class="flex sm:w-60 flex-wrap flex-col"
         >
-          <div class="flex flex-col space-y-1">
-            <router-link to="info">
+          <div class="flex flex-col">
+            <router-link :to="'/info/'+movie.id">
               <img
-                :src="'https://image.tmdb.org/t/p/w500/' + movie.backdrop_path"
+                :src="'https://image.tmdb.org/t/p/w500/' + movie.poster_path"
                 alt="godzilla"
-                class="card w-80 sm:w-64 h-80 object-cover hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
+                class="card w-80 sm:w-72 mb-5 h-80 object-fill hover:shadow-inner transform hover:scale-105 transition duration-500 ease"
               />
             </router-link>
           </div>
           <div>
-            <span class="py-2 font-bold max-w-40 mx-auto text-xl">{{
+            <span class="py-2 font-bold  mx-auto text-xl">{{
               movie.title
             }}</span>
             <div class="flex text-lg text-red-500 mb-7 sm:mb-10">
@@ -58,6 +58,8 @@
     </div>
   </div>
 </template>
+
+
 <script>
 export default {
   data() {

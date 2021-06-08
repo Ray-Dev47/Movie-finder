@@ -5,5 +5,5 @@ import MovieInfo from './components/MovieInfo.vue';
 
 export default [
 	{ path: '/', component: Body },
-	{ path: '/info', component: MovieInfo },
+	{ path: '/info/:id', component: MovieInfo },
 ];
