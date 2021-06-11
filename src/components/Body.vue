@@ -2,7 +2,7 @@
   <div class="bg-white dark:bg-gray-900">
     <div class="max-w-6xl  mx-auto">
       <!-- main -->
-      <div class="mt-36 text-center">
+      <div class="sm:mt-32 pt-36 text-center">
         <div class="text-4xl text-gray-800 dark:text-white sm:text-5xl font-bold">MovieFinder</div>
         <div class="text-lg text-gray-800 dark:text-white font-bold mt-4 mb-10 ">
           Want to find out about a movie? We've got you!

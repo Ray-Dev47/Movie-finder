@@ -54,20 +54,20 @@
               :key="cast.id"
               class="flex w-28 text-sm text-center pb-6 flex-row font-bold"
             >
-              <div>
+              <div class="text-gray-800 dark:text-white">
                 <img
                   class="rounded-full mx-25 h-24 w-24 object-cover"
                   :src="'https://image.tmdb.org/t/p/w92' + cast.profile_path"
-                  alt=""
+                  alt="Name not available"
                   v-if="cast.profile_path"
                 />
-                <div class="rounded-full text-gray-800 dark:text-white h-24 w-24" v-else><img src="@/assets/img/avatar.png" alt=""></div>
+                <div class="rounded-full  h-24 w-24" v-else><img src="@/assets/img/avatar.png" alt=""></div>
                 <div>{{ cast.name }}</div>
               </div>
             </div>
           </div>
           <div class="font-bold py-6 text-gray-500">Director</div>
-          <span v-if="directors.length < 1"
+          <span class="text-gray-800 dark:text-white" v-if="directors.length < 1"
             >Director not available for this movie</span
           >
           <div
