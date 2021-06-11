@@ -19,6 +19,7 @@
         </router-link>
       </div>
       <div class="text-center text-gray-800 dark:text-white flex justify-center flex-col cursor-pointer" @click="switchTheme">
+        <!-- <img src="@/assets/img/dark-bulb.png" alt="" class="h-10 w-10 mr-5"> -->
         <i
           class="fas fa-lightbulb text-xl sm:text-2xl mx-1"
         ></i>

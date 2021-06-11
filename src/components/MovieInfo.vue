@@ -1,7 +1,7 @@
  <template>
   <div class="bg-white dark:bg-gray-900">
     <div v-if="isLoading">Loading....</div>
-    <div class="max-w-full mt-32">
+    <div class="max-w-full mt-20 sm:mt-32">
       <router-link to="/">
         <img
           :src="'https://image.tmdb.org/t/p/w1280/' + movie.backdrop_path"

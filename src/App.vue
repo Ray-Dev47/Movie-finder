@@ -3,7 +3,11 @@
     <app-header></app-header>
     <!-- <app-body></app-body> -->
     <!-- <app-movie-info></app-movie-info> -->
-    <router-view/>
+   
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
+        
     <app-footer></app-footer>
   </div>
 </template>
@@ -34,4 +38,14 @@ export default {
 </script>
 
 <style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
