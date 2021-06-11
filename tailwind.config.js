@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        customHeight: '600px',
+        customHeight: '700px',
       },
       container: {
         marginTop: '-150px'

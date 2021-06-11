@@ -11,12 +11,11 @@
           /></a>
         </router-link>
       </div>
-      <div class="text-center flex justify-center flex-col cursor-pointer">
+      <div class="text-center flex justify-center flex-col cursor-pointer" @click="switchTheme">
         <i
-          class="fas fa-lightbulb text-xl dark:text-white sm:text-2xl mx-1"
+          class="fas fa-lightbulb text-xl sm:text-2xl mx-1"
         ></i>
         <button
-          @click="switchTheme"
           class="font-bold focus:outline-none focus:none sm:mt-2"
         >
          Light Mode
@@ -36,8 +35,18 @@ export default {
     };
   },
   methods: {
-    switchTheme: function () {
+    switchTheme() {
       this.isDark = !this.isDark;
+
+      if(!this.isDark){
+        document.documentElement.classList.remove('dark')
+      }else{
+        document.documentElement.classList.add('dark')
+      }
+
+      console.log("yyy")
+
+      
 
       // store.commit("SET_IS_DARK", this.isDark);
       this.mode = "Dark Mode";
