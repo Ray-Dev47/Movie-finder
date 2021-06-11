@@ -1,5 +1,5 @@
  <template>
-  <div>
+  <div class="bg-white dark:bg-gray-900">
     <div v-if="isLoading">Loading....</div>
     <div class="max-w-full mt-32">
       <router-link to="/">
@@ -23,7 +23,7 @@
       <!-- title and casts -->
       <div class="flex sm:max-w-xl w-auto sm:mt-10 sm:mx-40">
         <div class="flex flex-col pb-20">
-          <div class="font-bold justify-items-end text-2xl sm:text-4xl mb-6">
+          <div class="font-bold justify-items-end text-gray-800 dark:text-white text-2xl sm:text-4xl mb-6">
             {{ movie.title }}
           </div>
           
@@ -31,17 +31,17 @@
              <StarRating :rate="movie.vote_average" />
           </div>
           <div class="flex font-bold text-gray-500">
-            <span class="text-gray-800">Release Date: &nbsp;</span>  {{ movie.release_date }}
+            <span class="text-gray-800 dark:text-white">Release Date: &nbsp;</span>  {{ movie.release_date }}
             </div>
 
           
           <!-- Genre -->
           <div class="flex font-bold py-2 text-gray-500">
-            <span class="text-gray-800">Genre: &nbsp;</span>
+            <span class="text-gray-800 dark:text-white">Genre: &nbsp;</span>
             {{ genresList }}
           </div>
           <div class="font-bold text-gray-500">
-            <span class="text-gray-800">Vote Count:</span>&nbsp; {{ movie.vote_count }}
+            <span class="text-gray-800 dark:text-white">Vote Count:</span>&nbsp; {{ movie.vote_count }}
             </div>
           <div class="text-md sm:text-lg text-gray-600 font-bold my-6">
             {{ movie.overview }}
@@ -58,11 +58,10 @@
                 <img
                   class="rounded-full mx-25 h-24 w-24 object-cover"
                   :src="'https://image.tmdb.org/t/p/w92' + cast.profile_path"
-                  alt="Alexander Skarsgård"
+                  alt=""
                   v-if="cast.profile_path"
                 />
-                <div class="bg-yellow-600 rounded-full h-24 w-24" v-else><img src="@/assets/img/avatar.png" alt=""></div>
-
+                <div class="rounded-full text-gray-800 dark:text-white h-24 w-24" v-else><img src="@/assets/img/avatar.png" alt=""></div>
                 <div>{{ cast.name }}</div>
               </div>
             </div>
