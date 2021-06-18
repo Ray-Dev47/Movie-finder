@@ -8,13 +8,8 @@
           Want to find out about a movie? We've got you!
         </div>
         <!-- search movie -->
-        <div>
-          <input
-            type="text"
-            class="form-input text-gray-400 bg-white dark:bg-gray-900 text-2xl sm:text-5xl bg font-bold w-10/12 border-custom-orange border-t-0 border-r-0 border-l-0 border-b-2 sm:border-b-4 p-3 outline-none mb-3 placeholder-gray-400 " placeholder="Search by title... "
-          />
-          <i class="fas fa-search text-3xl sm:text-4xl text-gray-400"></i>
-        </div>
+        
+        <MovieSearch/>
         <!-- movie posters -->
         <div class="mt-36">
           <div class="font-bold text-gray-800 dark:text-white text-2xl sm:text-4xl mb-10">
@@ -29,7 +24,7 @@
         <div class="max-w-screen mx-auto" v-if="isLoading">
           <img
             src="@/assets/img/hourglass.gif"
-            class="mx-auto"
+            class="mx-auto text-gray-800 dark:text-white"
             alt="loading gif"
           />Loading....
         </div>
@@ -57,19 +52,21 @@
       </div>
     </div>
   </div>
-</template>
-
+</template> 
 
 <script>
 import StarRating from "./StarRating.vue";
+import MovieSearch from './MovieSearch.vue';
 export default {
   components: {
     StarRating,
+    MovieSearch
   },
   data() {
     return {
       movies: [],
       isLoading: false,
+      // closeIcon = false,
     };
   },
   methods: {
@@ -86,7 +83,7 @@ export default {
         });
     },
     
-  },
+    },
   mounted() {
     this.getMovie();
   },
