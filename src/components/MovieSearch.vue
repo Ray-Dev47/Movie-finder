@@ -45,17 +45,9 @@
   >
     <router-link :to="'/info/' + movie.id">
       <div
-        class="
-          flex
-          justify-between
-          cursor-pointer
-          items-center
-          text-xl
-          font-bold
-        "
-      >
-        <div class="flex">
-          <div>
+        class="flex justify-between cursor-pointer items-center text-xl font-bold">
+        <div class="flex" >
+          <div >
             <img
               :src="'https://image.tmdb.org/t/p/w92' + movie.poster_path"
               alt=""
@@ -67,12 +59,11 @@
             <div class="text-black text-2xl font-bold">
               {{ movie.title }}
             </div>
-            <div class="text-md flex items-start text-red-500">
+            <div class="text-md flex items-start text-red-500 ">
               <StarRating :rate="movie.vote_average" />
             </div>
           </div>
         </div>
-
         <div class="text-gray-500">{{ movie.release_date.split("-")[0] }}</div>
       </div>
     </router-link>
