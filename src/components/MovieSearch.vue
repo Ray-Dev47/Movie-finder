@@ -1,47 +1,14 @@
 <template>
   <div class="flex">
-    <input
-      type="text"
-      v-on:keyup="searchQuery"
-      v-model="movieSearch"
-      class="
-        form-input
-        text-gray-400
-        bg-white
-        dark:bg-gray-900
-        text-2xl
-        sm:text-5xl
-        font-bold
-        w-10/12
-        border-custom-orange border-t-0 border-r-0 border-l-0 border-b-2
-        sm:border-b-4
-        p-3
-        outline-none
-        mb-3
-        placeholder-gray-400
-      "
-      placeholder="Search by title... "
-    />
-    <i
-      @click="movieSearch = ''"
-      class="
-        fas
-        fa-times
-        text-3xl
-        sm:text-4xl
-        text-gray-400
-        cursor-pointer
-        px-3
-      "
-    ></i>
-    <i
-      class="fas fa-search text-3xl sm:text-4xl cursor-pointer text-gray-400"
-    ></i>
+      <input type="text" v-on:keyup="searchQuery" v-model="movieSearch" class="form-input text-gray-400 bg-white dark:bg-gray-900 text-2xl sm:text-5xl font-bold w-10/12  border-t-0 border-r-0 border-l-0 border-b-2 sm:border-b-4 p-3 outline-none mb-3 placeholder-gray-400" placeholder="Search by title... "/>
+
+        <i @click="movieSearch = ''" class="fas fa-times text-3xl sm:text-4xl text-gray-400 cursor-pointer px-3"></i>
+      <i v-on:keyup="searchIcon = !searchIcon" class="fas fa-search text-3xl sm:text-4xl cursor-pointer text-gray-400" ></i>
   </div>
   <div
     v-for="movie in movies"
     :key="movie.id"
-    class="p-3 mx-auto w-10/12 bg-gray-300 border-b-2"
+    class="p-3 mx-auto w-10/12 bg-gray-300 border-b-2 border-gray-500"
   >
     <router-link :to="'/info/' + movie.id">
       <div
@@ -80,12 +47,16 @@ export default {
     return {
       movies: [],
       movieSearch: "",
-    };
+      icon: false
+    }; 
   },
   methods: {
     searchQuery() {
       this.getMovie();
     },
+    searchIcon() {
+        this.icon = true
+    }, 
     getMovie() {
       let url = `https://api.themoviedb.org/3/search/movie?api_key=9099d4a456925cc52c8aed25ab61ba4e&query=${this.movieSearch}`;
       fetch(url)

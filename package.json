@@ -9,13 +9,14 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "body-parser": "*",
     "core-js": "^3.6.5",
+    "express": "*",
     "vue": "^3.0.0",
     "vue-resource": "^1.5.2",
     "vue-router": "^4.0.8",
-    "vuex": "^4.0.1",
-    "express":"*",
-    "body-parser":"*"
+    "vue3-smooth-scroll": "^0.8.1",
+    "vuex": "^4.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.2",

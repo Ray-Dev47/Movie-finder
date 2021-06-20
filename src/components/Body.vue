@@ -38,7 +38,7 @@
               <img
                 :src="'https://image.tmdb.org/t/p/w500/' + movie.poster_path"
                   alt="godzilla" class="card w-80 sm:w-72 mb-5 h-80 object-cover hover:shadow-inner transform 
-                hover:scale-105 transition duration-500 ease"
+                  hover:scale-105 transition duration-500 ease"
               />
             </router-link>
           </div>
@@ -46,7 +46,7 @@
             <span class="py-2 text-gray-800 dark:text-white font-bold mx-auto text-xl">{{
               movie.title
             }}</span>
-            <StarRating :rate="movie.vote_average" />
+            <StarRating :rate="movie.vote_average"/>
           </div>
         </div>
       </div>
