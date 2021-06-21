@@ -8,8 +8,7 @@
           Want to find out about a movie? We've got you!
         </div>
         <!-- search movie -->
-        
-        <MovieSearch/>
+          <MovieSearch/>
         <!-- movie posters -->
         <div class="mt-36">
           <div class="font-bold text-gray-800 dark:text-white text-2xl sm:text-4xl mb-10">
